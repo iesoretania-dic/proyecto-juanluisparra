@@ -1,0 +1,50 @@
+﻿html,
+body {
+    //*background-image: url("p2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;**/
+    
+}
+body{
+	background-color:#d3d3d3;
+}
+
+#titulo {
+    height: 20vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.titulo-encima {
+    margin-top: -5%;
+    color: white;
+    font-size: 60px;
+}
+
+#contenedor {
+    height: 73vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.texto-encima {
+    align-self: center;
+}
+
+.texto {
+    color: white;
+    font-size: 100px;
+}
+#cabecera{
+	height:25px;
+}
+#re{
+
+	float:right;
+}
