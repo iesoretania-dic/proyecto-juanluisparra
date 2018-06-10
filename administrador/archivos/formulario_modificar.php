@@ -12,6 +12,9 @@ if(!$_SESSION['inicio_sesion']){
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../estilos/boo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/font/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../estilos/main.css">
 
     <title>Modificar tiempo</title>
 </head>
@@ -19,16 +22,20 @@ if(!$_SESSION['inicio_sesion']){
 <body>
 <div id="cabecera">
     <form id="cerrar" action="cerrar.php" method="post" >
-        <input  name="cerrar_sesion" type="submit" value="Cerrar sesion" />
+        <input  name="cerrar_sesion" type="submit" value="Cerrar sesion" class="btn btn-danger"/>
     </form>
     <form action="volver.php" method="post" >
-        <input id ="volver" name="volver" type="submit" value="Volver al menu" />
+        <input id ="volver" name="volver" type="submit" value="Volver al menu" class="btn btn-primary"/>
     </form>
 </div>
 <form action="modificar.php" method="post">
     <div id="inicio">
         <p>Selecione la prioridad que quieres modificar</p>
-            <select id="prioridad" name="prioridad" >
+        <div class="input-group">
+            <div id="prioridad" class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon"><i class="fas fa-sort-numeric-up"></i></div>
+            </div>
+            <select id="prioridad" name="prioridad" class="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -43,8 +50,11 @@ if(!$_SESSION['inicio_sesion']){
 
         </div>
         <p>seleciona el tiempo que quieres darle</p>
-
-            <select id="tiempo" name="tiempo">
+        <div class="input-group">
+            <div id="tiempo" class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon"><i class="fas fa-clock"></i></div>
+            </div>
+            <select id="tiempo" name="tiempo" class="form-control">
                 <option value="1000">1 segundos</option>
                 <option value="2000">2 segundos</option>
                 <option value="3000">3 segundos</option>
@@ -60,7 +70,7 @@ if(!$_SESSION['inicio_sesion']){
         </div>
 
 
-        <input id="modificar" name="modificar_tiempo" type="submit" value="Modificar tiempo" />
+        <input id="modificar" name="modificar_tiempo" type="submit" value="Modificar tiempo" class="btn btn-success btn-block"/>
     </div>
 
 </form>

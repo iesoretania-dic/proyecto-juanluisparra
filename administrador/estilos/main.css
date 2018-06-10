@@ -1,0 +1,61 @@
+﻿html,
+body {
+    background-color: lightgray;
+}
+
+
+/*este es el inicio*/
+#cabecera{
+	height:50px;
+}
+
+#inicio {
+	width:400px;
+	margin:0 auto;
+    text-align: center;
+}
+#logo{
+	width:180px;
+	height:180px;
+}
+#nombre{
+	margin-bottom:20px;
+}
+#password{
+	margin-bottom:20px;
+}
+
+/* esto es nuevo usuario*/
+#prioridad{
+	margin-bottom:20px;
+}
+#volver{
+	float:right;
+}
+#cerrar{
+	float:left;
+}
+/* esto es borrar*/
+#tabla {   
+    text-align: center;
+
+}
+#pager{
+	float:left;
+}
+/*esto es modificar*/
+#modificar{
+	margin-top:20px;
+}
+@media screen and (max-width: 768px) {
+	#logo{
+	width:100px;
+	height:100px;
+}
+    #inicio {
+		width:250px;
+		top: 40%;
+	}
+	
+ 
+}

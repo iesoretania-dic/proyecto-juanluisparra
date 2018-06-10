@@ -27,7 +27,11 @@ if(!$_SESSION['inicio_sesion']){
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-       <title>Modificar usuario</title>
+    <link rel="stylesheet" href="../estilos/boo/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos/font/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../estilos/main.css">
+
+    <title>Modificar usuario</title>
 </head>
 
 <body>
@@ -42,18 +46,27 @@ if(!$_SESSION['inicio_sesion']){
 <div id="inicio">
     <form action="iniciarmodificacionusuario.php" method="post">
 
-
-            <input id="usuario" name="usuario" type="text"  readonly="true" required>
+        <div class="input-group">
+            <div id="usuario" class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon"><i class="fas fa-user"></i></div>
+            </div>
+            <input id="usuario" name="usuario" type="text" class="form-control" readonly="true" required>
         </div>
         <p>Introduce la nueva contraseña</p>
 
-
-            <input id="password" name="password" type="text"  placeholder="Introduce la contraseña" required>
+        <div class="input-group">
+            <div id="password" class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon"><i class="fas fa-key"></i></div>
+            </div>
+            <input id="password" name="password" type="text" class="form-control" placeholder="Introduce la contraseña" required>
         </div>
 
         <p>Introduce la prioridad maxima que va a tener el usuario</p>
-
-            <select id="prioridad" name="prioridad" >
+        <div class="input-group">
+            <div id="prioridad" class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon"><i class="fas fa-sort-numeric-up"></i></div>
+            </div>
+            <select id="prioridad" name="prioridad" class="form-control">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -68,7 +81,7 @@ if(!$_SESSION['inicio_sesion']){
         </div>
 
 
-        <input id="btnnoticia" name="modificar_usuario" type="submit" value="Modificar Usuario" />
+        <input id="btnnoticia" name="modificar_usuario" type="submit" value="Modificar Usuario" class="btn btn-success btn-block"/>
 
     </form>
 </div>
